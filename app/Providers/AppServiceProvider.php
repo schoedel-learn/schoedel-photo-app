@@ -19,6 +19,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        // Register policies (auto-discovery should work, but explicit registration for clarity)
+        // Policies are auto-discovered if they follow App\Policies\{ModelName}Policy naming
     }
 }

@@ -60,6 +60,15 @@ return [
             'report' => false,
         ],
 
+        'thumbnails' => [
+            'driver' => env('THUMBNAIL_STORAGE_DRIVER', 'public'),
+            'root' => storage_path('app/public/thumbnails'),
+            'url' => env('APP_URL').'/storage/thumbnails',
+            'visibility' => 'public',
+            'throw' => false,
+            'report' => false,
+        ],
+
     ],
 
     /*
